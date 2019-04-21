@@ -1,0 +1,176 @@
+\documentclass[letterpaper,12pt,oneside]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[UKenglish]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\graphicspath{{./figs/}}
+\usepackage{setspace}
+\usepackage[top=1in, left=1.25in, right=1.25in, bottom=1in]{geometry}
+\usepackage{graphics}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\begin{document}
+\begin{center}
+\large{\textbf{
+Veermata Jijabai Technological Institute,Mumbai\\
+\\ 
+        (Autonomous Institute Affiliated to University of Mumbai)\\
+               2018 - 2019} \\
+\vspace{15mm}
+}
+\Large{
+Nikita Masand\\
+Mentor: Prof. Pranav Nerurkar\\
+SY IT\\
+171081054\\
+\vspace{15mm}
+}
+\par
+\Huge{
+\textbf{Game Theory}\\
+}
+\vspace{8mm}
+\includegraphics[]{logo.jpeg}
+\par
+
+\Large{
+\vspace{25mm}
+Department Of Computer Engineering And Information Technology\\
+}
+\end{center}
+%\author{Nikita Masand}
+%\title{Game Theory}
+%\faculty{   Veermata Jijabai Technological Institute,Mumbai}
+%\degree{}
+%\supervisor{}
+%\cityandyear{}
+%\logouni{}
+%\logofac{}
+\begin{titlepage}
+\vspace*{2\baselineskip}
+\begin{center} \begin{Huge} \textbf{CERTIFICATE}\end{Huge} \end{center} 
+\vspace*{2\baselineskip}
+\Large
+This  is  to  certify  that, \textbf{Nikita Masand (ID-171081054)} , a  student  of  \textbf{Bachelor  Of  Technology (Information Technology)} has  completed  the  lab  report  held  in  Jan-Feb  2019  for  thesis on Game Theory   to  our  satisfaction.
+\vspace*{14\baselineskip}\\
+Mr.Pranav Nerurkar \hspace{0.8in}    \hspace{0.5in}           Dr. V. B. Nikam\\
+\hspace{0.8in} Supervisor  \hspace{1in}          \hspace{1.1in}  HOD of CE \& IT
+\vspace*{2\baselineskip}
+\\Date:\\Place:                   
+\end{titlepage}
+
+%------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+%Certificate part(Fourth Page)
+\vspace*{3\baselineskip}
+\begin{center}\begin{Huge}\textbf{Declaration of the Student}\end{Huge}\end{center}
+\vspace*{2\baselineskip}
+\begin{Large}
+I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources.\\
+
+I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission.\\
+
+I understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
+\end{Large}
+\vspace*{8\baselineskip}
+\\Nikita Masand \\
+\hspace{0.5in}(Reg no : 171081054)   \hspace{2.5in} Date: \line(1,0){100}
+\newpage
+\begin{centering}
+\Huge{
+\textbf{Acknowledgements}\\
+}
+\vspace{5mm}
+\end{centering}
+\begin{Large}
+My sincere thanks goes to Dr. Dhiren Patel, Director of Veermata Jijabai Technological Institute, Mumbai who provided me an opportunity to work as a research scholar and gave me access to the laboratory and research facilities which helped me to conduct this research.I would like to express my sincere gratitude to my supervisor Mr. Pranav Nerurkar for the patience, motivation, and immense knowledge whose guidance helped me in all the time of research and writing of this report.I thank our Head of the Department Dr.  V. B. Nikam, for extending his invaluable support.  I would also thank my institute and the department’s faculty members without whom this research work would have been a distant reality.I also extend my heartfelt thanks to my family and well wishers. Thank you for always encouraging
+me and for bringing so much love and happiness to my life!
+
+\end{Large}
+\vspace*{8\baselineskip}
+%---------------------------------------------------
+\newpage
+\begin{Large}
+\begin{centering}
+\textbf{PREFACE}
+\\
+\end{centering}
+\vspace{5mm}
+\input{preface.tex}
+
+
+\end{Large}
+%--------------------------------------------------------------------------------
+\Large
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\chapter{What is Game Theory?}
+\input{introduction.tex}
+\newpage
+\section{What is a Game?}
+\input{game.tex}
+\newpage
+\section{Examples of Game}
+\subsection{Coin Matching Game}
+\input{coin.tex}
+\newpage
+\subsection{Chess}
+\input{chess.tex}
+\newpage
+\subsection{Prisoner's Dilemma}
+\input{dilemma.tex}
+\newpage
+\chapter{Nash Equilibrium}
+\input{Equi.tex}
+\newpage
+\section{Nash Equilibrium for Prisoner's dilemma}
+\input{equiNash.tex}
+\newpage
+\chapter{MiniMax Algorithm}
+\input{minmax1.tex}
+\newpage
+\section{MiniMax Code}
+\input{minmax_code.tex}
+\chapter{History}
+\input{history.tex}
+\newpage
+\chapter{Applications of Game Theory in CS}
+\input{applications}
+\newpage
+\bibliography{}
+\input{References.tex}
+\end{document}

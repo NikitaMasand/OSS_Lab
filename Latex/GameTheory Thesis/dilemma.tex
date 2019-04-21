@@ -1,0 +1,68 @@
+There are two persons who have committed a crime of which there is no evidence. Police catches them and puts them in two separate cells. Because is no evidence against the convicts, they cannot be proven guilty. So the police tries to use one against the other. Each Prisoner is given  two options either to confess  his crime or to deny it . If prisoner I confesses but prisoner II denies then the first prisoner serves as Testimony against the other and he gets no punishment, while the prisoner II gets full term of 10 yrs and vice versa. If both confess both get 5 years of imprisonment each as now police has evidence against both of them. If both deny the police has evidence against none, so maximum punishment that they can get is 1 yr each.\\
+\begin{figure}
+    \centering
+    \includegraphics[]{dilemma.png}
+    \caption{prisoner's dilemma}\\
+    Source: https://en.wikipedia.org/wiki/Prisonerdilemma
+\end{figure}
+
+\\
+This can be represented in tabular form as.
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{More rows.}
+    \label{tab:table1}
+    \begin{tabular}{l|S|r}
+      \textbf{I/II} & \textbf{Confess} & \textbf{Deny}\\
+      \hline
+      \textbf{Confess} & 5,5 & 0,10\\
+      \textbf{Deny} & 10,0 & 1,1\\
+    \end{tabular}
+  \end{center}
+\end{table}
+This is the standard representation of 2 player game. Each cell has  two payoffs, one for each player. The first  number in a cell is the penalty of player 1 and the second number is the penalty of player two. Each row represents a startegy for player 1 and each column represents a strategy for player 2. So the bottom right column means if Player 1 denies and Player 2 denies then  penalty for player 1 is 1 year and that of player two is also 1 year.
+Now lets analyse the Game with player I 's perspective.
+\\
+He doesn't know if player II is going to confess or deny, but he wants to decrease his punishment. So he considers two cases.\\
+\begin{enumerate}
+    \item  If player II confesses \\
+    In this case confessing gives 5 years imprisonment while denying gives 10 years 
+    So its better to confess
+    \item  If player II denies \\
+   In this case confessing gives only 1 years imprisonment while denying gives 1 years 
+   Again its better to confess
+\end{enumerate} \\
+So player I will like to confess if he is guilty.
+
+Player II will argue on similar lines and will also like to confess if guilty.
+
+Lets now assume some numbers to illustrate this fact. If player 1 assumes that player 2 would confess with probability  0.5 .The expected number of years in prison if player one confesses with probability 0.5 i
+
+0.5 \times 0.5 \times ( 5 + 10 + 1 + 0 ) = 4 years
+\\
+\begin{array} { l l l l l l } { 0.4 } & { \mathrm { x } } & { 0.5 } & { \mathrm { x } } & { 5 } & { + } \end{array} \\
+(I confesses)$\quad$ (II confesses) $\quad$(I gets 5 years) \\
+\begin{array} { l l l l l l } { 0.6 } & { \mathrm { x } } & { 0.5 } & { \mathrm { x } } & { 10 } & { + } \end{array} \\
+(I denies) $\quad$ (II confesses) $\quad$ (I gets 10 years $)$ \\
+\begin{array} { l l l l l l } { 0.4 } & { \mathrm { x } } & { 0.5 } & { \mathrm { x } } & { 0 } & { + } \end{array} \\
+(I confesses) $\quad$ (II denies) $\quad$ (I gets 0 years$)$ \\
+\begin{array} { l l l l l } { 0.6 } & { \mathrm { x } } & { 0.5 } & { \mathrm { x } } & { 1 } \end{array} \\
+(I denies)$\quad$ (II denies) $\quad$(I gets 1 year)
+= 4.3 years
+
+We see that if he is less likely to confess his penalty increases.
+
+\textbf{Illustration}
+Now  we assume
+
+Player I confesses with probability q 
+Player I assumes that player II would confess with probability p
+
+for player I
+\\
+$5 p q + 0 \times q ( 1 - p ) + 10 x ( 1 - q ) p + 1 . ( 1 - q ) ( 1 - p )$ years
+\\
+= \mathrm { qp } - \mathrm { q } ( 4 \mathrm { p } + 1 )
+
+this is a decreasing function of q. So more likely player I is to confess less punishment he will get irrespective of what player II does
